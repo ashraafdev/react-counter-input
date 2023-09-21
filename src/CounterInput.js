@@ -92,7 +92,7 @@ class CounterInput extends React.Component {
 
   handleChangeCount = () => {
     if (this.props.onCountChange !== undefined) {
-      this.props.onCountChange(this.state.count, this.props.productName);
+      this.props.onCountChange(this.state.count, this.props.productIndice);
     }
   };
 
@@ -171,7 +171,7 @@ CounterInput.defaultProps = {
   count: 0,
   max: Infinity,
   min: -Infinity,
-  productName: '',
+  productName: null,
 };
 
 CounterInput.propTypes = {
@@ -179,7 +179,7 @@ CounterInput.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
   onCountChange: PropTypes.func,
-  productName: PropTypes.string,
+  productIndice: PropTypes.string | PropTypes.number | null,
 };
 
 export default CounterInput;
