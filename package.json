@@ -1,6 +1,6 @@
 {
   "name": "react-counter-input-optional",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A flexible counter input component",
   "main": "lib/index.js",
   "module": "es/index.js",
