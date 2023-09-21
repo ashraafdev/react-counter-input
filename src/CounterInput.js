@@ -92,7 +92,7 @@ class CounterInput extends React.Component {
 
   handleChangeCount = () => {
     if (this.props.onCountChange !== undefined) {
-      this.props.onCountChange(this.state);
+      this.props.onCountChange(this.state.count, this.props.productName);
     }
   };
 
